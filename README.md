@@ -1,6 +1,6 @@
 # Bulgarian Constitutional Court decisions
 
-## Using Tesseract to Convert Scanned PDFs to Data
+## Using Tesseract to Convert Scanned PDFs to Text Data
 
 ### Prerequisites
 
@@ -41,10 +41,30 @@ for file in *.png  ; do tesseract "$file" "${file%%.*}" -l bul; done
 for file in *.txt; do (cat "${file}"; echo) >> bulgarian_combined.txt; done
 ```
 
+## Converting DOCX Files to Text Data
+
+The following guide is carried out using the command line.
+
+### 1. Identify DOCX files that will be converted
+
+```bash
+find . -name "*.docx" | while read file; do
+unzip -p $file word/document.xml |
+sed -e 's/<[^>]\{1,\}>//g; s/[^[:print:]]\{1,\}//g' > "${file/docx/txt}"
+done
+```
+
+### 2. Convert DOCX files to TXT
+
+```bash
+grep -r "." --include "*.txt" .
+```
+
 ## TO-DO
 
 - [x] Write initial guide using tesseract in bash terminal
 - [x] Write guide using tesseract in windows/macOS
+- [x] Write guide for converting DOCX files to TXT
 - [ ] Test pdftools (R) and pdfminer.six (Python) and consider alternative approaches
 - [ ] Test process for batch editing files using pytesseract
 - [ ] Think about the best approach for batch translating txt files from Bulgarian to English
