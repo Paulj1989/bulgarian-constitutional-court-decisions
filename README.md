@@ -66,5 +66,5 @@ grep -r "." --include "*.txt" .
 - [x] Write guide using tesseract in windows/macOS
 - [x] Write guide for converting DOCX files to TXT
 - [ ] Test pdftools (R) and pdfminer.six (Python) and consider alternative approaches
-- [ ] Test process for batch editing files using pytesseract
-- [ ] Think about the best approach for batch translating txt files from Bulgarian to English
+- [x] Test process for batch editing files using pytesseract
+- [x] Think about the best approach for batch translating txt files from Bulgarian to English
