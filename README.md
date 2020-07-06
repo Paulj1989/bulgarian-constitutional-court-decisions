@@ -19,6 +19,12 @@ The following guide is carried out using the command line.
 pdftoppm file.pdf img -png
 ```
 
+#### 1a. Turn pdf files to png using Windows
+
+```bash
+pdftoppm -png myfile.pdf myfile
+```
+
 #### 2. If images were low-quality scans (with annotations, black marks etc.), crop image so that only the main body text is included
 
 #### 3. Process png files using tesseract
@@ -39,6 +45,12 @@ for file in *.png  ; do tesseract "$file" "${file%%.*}" -l bul; done
 
 ```bash
 for file in *.txt; do (cat "${file}"; echo) >> bulgarian_combined.txt; done
+```
+
+#### 4a. Another way to combine all text documents using Windows
+
+```bash
+copy *.txt myfile
 ```
 
 ## Converting DOCX Files to Text Data
@@ -66,8 +78,8 @@ grep -r "." --include "*.txt" .
 - [x] Write guide using tesseract in windows/macOS
 - [x] Write guide for converting DOCX files to TXT
 - [ ] Test pdftools (R) and pdfminer.six (Python) and consider alternative approaches
-- [ ] Test process for batch editing files using pytesseract
-- [ ] Think about the best approach for batch translating txt files from Bulgarian to English
+- [x] Test process for batch editing files using pytesseract
+- [x] Think about the best approach for batch translating txt files from Bulgarian to English
 
 ## Resources
 
