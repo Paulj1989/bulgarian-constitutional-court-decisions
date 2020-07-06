@@ -68,3 +68,29 @@ grep -r "." --include "*.txt" .
 - [ ] Test pdftools (R) and pdfminer.six (Python) and consider alternative approaches
 - [ ] Test process for batch editing files using pytesseract
 - [ ] Think about the best approach for batch translating txt files from Bulgarian to English
+
+## Resources
+
+### Legal Corpora
+
+- [Corpus of US Supreme Court Opinions](https://www.english-corpora.org/scotus/)
+- [Case Law Access Project](https://case.law/tools/)
+- [UCI Legal Case Reports](https://archive.ics.uci.edu/ml/datasets/Legal+Case+Reports)
+
+### Python/R/Julia Libraries for NLP
+
+- [Blackstone](https://github.com/ICLRandD/Blackstone) - A spaCy pipeline and model for NLP on unstructured legal text
+- [topicmodels](https://cran.r-project.org/web/packages/topicmodels/index.html)
+- [displaCy](https://spacy.io/usage/visualizers) - A built-in spaCy dependency for visualizing NLP models
+- [spaCy](https://explosion.ai/blog/spacy-transformers) [Transformers](https://github.com/explosion/spacy-transformers)
+- [Thinc](https://github.com/explosion/thinc) - A [lightweight deep learning library](https://thinc.ai/docs) for composing models, supporting layers from other frameworks like PyTorch, TensorFlow, or MXNet
+- [TopicModelsVB.jl](https://github.com/ericproffitt/TopicModelsVB.jl)
+
+### Research
+
+- [McCarty (2007) - Deep Semantic Interpretations of Legal Texts](https://www.cs.rutgers.edu/~mccarty/research/icail07-acm.pdf)
+
+### Other Resources
+
+- [spaCy Course](https://github.com/ines/spacy-course)
+- [Research Lab @ The Incorporated Council of Law Reporting (ICLR&D)](https://research.iclr.co.uk/)
