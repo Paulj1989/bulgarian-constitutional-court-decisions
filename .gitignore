@@ -6,7 +6,7 @@
 !.vscode/extensions.json
 *.code-workspace
 
-data/json/to-do/*
+.vscode/settings.json
 
 # Local History for Visual Studio Code
 .history/
