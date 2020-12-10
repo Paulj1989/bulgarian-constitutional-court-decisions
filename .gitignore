@@ -1,3 +1,7 @@
+# Local History for Visual Studio Code
+.history/
+
+# Local Files
 .vscode/*
 .vscode/settings.json
 !.vscode/settings.json
@@ -5,19 +9,14 @@
 !.vscode/launch.json
 !.vscode/extensions.json
 *.code-workspace
-
+TODO
+.devcontainer
+research-plan.md
 .vscode/settings.json
 data/json/to-do/D1_032602.json
 data/json/to-do/D4_21041992.json
 
 logs/*
-
-# Local History for Visual Studio Code
-.history/
-
-# Local Files
-TODO
-.devcontainer
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
