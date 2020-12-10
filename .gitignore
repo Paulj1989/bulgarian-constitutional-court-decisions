@@ -10,6 +10,8 @@
 data/json/to-do/D1_032602.json
 data/json/to-do/D4_21041992.json
 
+logs/*
+
 # Local History for Visual Studio Code
 .history/
 
