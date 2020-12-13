@@ -44,7 +44,7 @@ All models that are currently in development are contained in the models folder.
 ## Current Results
 
 The baseline models so far achieve the following performance on the training and validation data:
-
+</br>
 | Baseline Model                       | Test Accuracy         |
 | ------------------------------------ | --------------------- |
 | Logistic Regression                  |         80%           |
@@ -53,7 +53,7 @@ The baseline models so far achieve the following performance on the training and
 
 </br>
 The deep learning models so far achieve the following performance on the training and validation data:
-
+</br>
 | Deep Learning Model                                 | Test Accuracy         | Validation Accuracy       |
 | --------------------------------------------------- | --------------------- | ------------------------- |
 | Convolutional Neural </br> Network (CNN)            |         89%           |           80%             |
@@ -100,4 +100,4 @@ The data for this project is licensed under the [Creative Commons Attribution 3.
 
 ## Contact
 
-If you have any questions or comments, feel free to contact me (@paulj1989) by [email](mailto:paul@paulrjohnson.net), on [Twitter](https://twitter.com/paul_johnson89), or in the [repository discussions](https://github.com/Paulj1989/bulgarian-constitutional-court-decisions/discussions).
+If you have any questions or comments, feel free to contact [me](https://github.com/paulj1989) by [email](mailto:paul@paulrjohnson.net), on [Twitter](https://twitter.com/paul_johnson89), or in the [repository discussions](https://github.com/Paulj1989/bulgarian-constitutional-court-decisions/discussions).
