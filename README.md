@@ -54,6 +54,7 @@ The baseline models so far achieve the following performance on the training and
 </br>
 The deep learning models so far achieve the following performance on the training and validation data:
 </br>
+
 | Deep Learning Model                                 | Test Accuracy         | Validation Accuracy       |
 | --------------------------------------------------- | --------------------- | ------------------------- |
 | Convolutional Neural </br> Network (CNN)            |         89%           |           80%             |
