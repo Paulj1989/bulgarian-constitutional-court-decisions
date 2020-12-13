@@ -43,17 +43,18 @@ All models that are currently in development are contained in the models folder.
 
 ## Current Results
 
-The models so far achieve the following performance on the training and validation data:
+The baseline models so far achieve the following performance on the training and validation data:
 
-| Baseline Model                       | Test </br>Accuracy    |
+| Baseline Model                       | Test Accuracy         |
 | ------------------------------------ | --------------------- |
 | Logistic Regression                  |         80%           |
 | Naive Bayes                          |         84%           |
 | Support Vector Machines </br> (SVM)  |         81%           |
 
 </br>
+The deep learning models so far achieve the following performance on the training and validation data:
 
-| Deep Learning Model                                 | Test </br>Accuracy    | Validation </br> Accuracy |
+| Deep Learning Model                                 | Test Accuracy         | Validation Accuracy       |
 | --------------------------------------------------- | --------------------- | ------------------------- |
 | Convolutional Neural </br> Network (CNN)            |         89%           |           80%             |
 | Long Short-Term Memory </br> Neural Network (LSTM)  |         89%           |           80%             |
