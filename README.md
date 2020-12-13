@@ -1,102 +1,88 @@
-# Bulgarian Constitutional Court decisions
+# Analyzing Legal Texts from the Bulgarian Constitutional Court
 
-## Using Tesseract to Convert Scanned PDFs to Text Data
+Using natural language processing and deep learning methods for text and sentence classification tasks, applied to legal texts from the Bulgarian Constitutional Court.
 
-### Prerequisites
+## Contents
 
-The following packages need to be installed:
+- [Requirements](#requirements)
 
-- Tesseract - An open source text recognition (OCR) engine. A guide for installing Tesseract can be found [here](https://tesseract-ocr.github.io/tessdoc/Home.html), and documentation can be found [here](https://github.com/tesseract-ocr/tesseract).
-- Xpdf - Xpdf offers a selection of command line tools for handling PDF files, including converting PDFs to image files. Xpdf can be downloaded and installed [here](https://www.xpdfreader.com/download.html).
+- [Training](#training)
 
-### Process
+- [Evaluation](#evaluation)
 
-The following guide is carried out using the command line.
+- [Pre-trained Models](#pre-trained-models)
 
-#### 1. Turn pdf files to png
+- [Current Results](#current-results)
 
-```bash
-pdftoppm file.pdf img -png
-```
+- [Contributing](#contributing)
 
-#### 1a. Turn pdf files to png using Windows
+- [Resources](#resources)
 
-```bash
-pdftoppm -png myfile.pdf myfile
-```
+  - [Legal Corpora](#legal-corpora)
 
-#### 2. If images were low-quality scans (with annotations, black marks etc.), crop image so that only the main body text is included
+  - [Research](#research)
 
-#### 3. Process png files using tesseract
+  - [Other Resources](#other-resources)
 
-- If carried out on just one image:
+## Requirements
 
-```bash
-tesseract img.png newFile -l bul
-```
+The Bulgarian Constitutional Court (BCC) project is managed in a virtual environment, using pipenv. All packages and their dependencies can be found in Pipfile and Pipfile.lock. To create a pipenv environment and install all the packages needed to run the codes in the repository, run the following in a terminal:
 
-- If carried out on a batch of images:
+````bash
+# install pipenv
+pip install pipenv
 
-```bash
-for file in *.png  ; do tesseract "$file" "${file%%.*}" -l bul; done
-```
+# navigate to the repository directory
+cd ~/path/to/bulgarian-constitutional-court-decisions
 
-#### 4. Combine all text documents
+# install virtual environment and dependencies
+pipenv install
+````
 
-```bash
-for file in *.txt; do (cat "${file}"; echo) >> bulgarian_combined.txt; done
-```
+All models that are currently in development are contained in the models folder. Text data and annotated documents can be found in the models/data folder, as well as a guide on converting documents from pdf to text, and a jupyter notebook tutorial on how to do this in python.
 
-#### 4a. Another way to combine all text documents using Windows
+## Current Results
 
-```bash
-copy *.txt myfile
-```
+The models so far achieve the following performance on the training and validation data:
 
-## Converting DOCX Files to Text Data
+| Baseline Model                       | Test </br>Accuracy    |
+| ------------------------------------ | --------------------- |
+| Logistic Regression                  |         80%           |
+| Naive Bayes                          |         84%           |
+| Support Vector Machines </br> (SVM)  |         81%           |
 
-The following guide is carried out using the command line.
+</br>
 
-### 1. Identify DOCX files that will be converted
+| Deep Learning Model                                 | Test </br>Accuracy    | Validation </br> Accuracy |
+| --------------------------------------------------- | --------------------- | ------------------------- |
+| Convolutional Neural </br> Network (CNN)            |         89%           |           80%             |
+| Long Short-Term Memory </br> Neural Network (LSTM)  |         89%           |           80%             |
 
-```bash
-find . -name "*.docx" | while read file; do
-unzip -p $file word/document.xml |
-sed -e 's/<[^>]\{1,\}>//g; s/[^[:print:]]\{1,\}//g' > "${file/docx/txt}"
-done
-```
+## Project Plans
 
-### 2. Convert DOCX files to TXT
+### Status
 
-```bash
-grep -r "." --include "*.txt" .
-```
+This project is still in progress.
 
-## TO-DO
+### TODOs
 
-- [x] Write initial guide using tesseract in bash terminal
-- [x] Write guide using tesseract in windows/macOS
-- [x] Write guide for converting DOCX files to TXT
-- [ ] Test pdftools (R) and pdfminer.six (Python) and consider alternative approaches
-- [x] Test process for batch editing files using pytesseract
-- [x] Think about the best approach for batch translating txt files from Bulgarian to English
+Current TODOs for future development:
+
+- [ ] Tune baseline model hyperparameters to improve performance
+- [ ] Improve deep learning models
+- [ ] Visualize model performance
+- [ ] Further model testing
+- [ ] Add more annotated data to improve training process
 
 ## Resources
+
+If you are interested in using NLP or deep learning methods for analyzing legal texts, the following resources may be useful.
 
 ### Legal Corpora
 
 - [Corpus of US Supreme Court Opinions](https://www.english-corpora.org/scotus/)
 - [Case Law Access Project](https://case.law/tools/)
 - [UCI Legal Case Reports](https://archive.ics.uci.edu/ml/datasets/Legal+Case+Reports)
-
-### Python/R/Julia Libraries for NLP
-
-- [Blackstone](https://github.com/ICLRandD/Blackstone) - A spaCy pipeline and model for NLP on unstructured legal text
-- [topicmodels](https://cran.r-project.org/web/packages/topicmodels/index.html)
-- [displaCy](https://spacy.io/usage/visualizers) - A built-in spaCy dependency for visualizing NLP models
-- [spaCy](https://explosion.ai/blog/spacy-transformers) [Transformers](https://github.com/explosion/spacy-transformers)
-- [Thinc](https://github.com/explosion/thinc) - A [lightweight deep learning library](https://thinc.ai/docs) for composing models, supporting layers from other frameworks like PyTorch, TensorFlow, or MXNet
-- [TopicModelsVB.jl](https://github.com/ericproffitt/TopicModelsVB.jl)
 
 ### Research
 
@@ -106,3 +92,11 @@ grep -r "." --include "*.txt" .
 
 - [spaCy Course](https://github.com/ines/spacy-course)
 - [Research Lab @ The Incorporated Council of Law Reporting (ICLR&D)](https://research.iclr.co.uk/)
+
+## License
+
+The data for this project is licensed under the [Creative Commons Attribution 3.0 Unported license](https://creativecommons.org/licenses/by/3.0/), and the code used to train the models is licensed under the [MIT license](LICENSE.md).
+
+## Contact
+
+If you have any questions or comments, feel free to contact me (@paulj1989) by [email](mailto:paul@paulrjohnson.net), on [Twitter](https://twitter.com/paul_johnson89), or in the [repository discussions](https://github.com/Paulj1989/bulgarian-constitutional-court-decisions/discussions).
