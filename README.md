@@ -53,7 +53,7 @@ The baseline models so far achieve the following performance on the training and
 
 </br>
 The deep learning models so far achieve the following performance on the training and validation data:
-</br>
+</br></br>
 
 | Deep Learning Model                                 | Test Accuracy         | Validation Accuracy       |
 | --------------------------------------------------- | --------------------- | ------------------------- |
