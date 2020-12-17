@@ -4,7 +4,6 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-numpy = "*"
 pandas = "*"
 matplotlib = "*"
 seaborn = "*"
@@ -14,6 +13,10 @@ keras = "*"
 datetime = "*"
 ipykernel = "*"
 sklearn = "*"
+pydot = "*"
+tensorflow-hub = "*"
+numpy = "*"
+yellowbrick = "*"
 
 [dev-packages]
 black = "*"
