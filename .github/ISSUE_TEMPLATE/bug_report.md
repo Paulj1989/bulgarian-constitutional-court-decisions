@@ -25,7 +25,7 @@ If applicable, add screenshots to help explain your problem.
 
 **Desktop (please complete the following information):**
  - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
+ - IDE/Editor [e.g. jupyter notebook, vscode, sublime]:
  - Version [e.g. 22]
 
 **Additional context**
