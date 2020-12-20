@@ -72,8 +72,8 @@ Current TODOs for future development:
 
 - [ ] Tune baseline model hyperparameters to improve performance
 - [ ] Improve deep learning models
-- [ ] Visualize model performance
-- [ ] Further model testing
+- [x] Visualize model performance
+- [x] Further model testing
 - [ ] Add more annotated data to improve training process
 
 ## Resources
