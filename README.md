@@ -5,24 +5,16 @@ Using natural language processing and deep learning methods for text and sentenc
 ## Contents
 
 - [Requirements](#requirements)
-
-- [Training](#training)
-
-- [Evaluation](#evaluation)
-
-- [Pre-trained Models](#pre-trained-models)
-
 - [Current Results](#current-results)
-
-- [Contributing](#contributing)
-
+- [Project Plans](#project-plans)
+  - [Status](#status)
+  - [TODOs](#todos)
 - [Resources](#resources)
-
   - [Legal Corpora](#legal-corpora)
-
   - [Research](#research)
-
   - [Other Resources](#other-resources)
+- [License](#license)
+- [Contact](#contact)
 
 ## Requirements
 
@@ -64,7 +56,7 @@ The deep learning models so far achieve the following performance on the trainin
 
 ### Status
 
-This project is still in progress.
+This project is still in progress. Current models are in the early stages of development.
 
 ### TODOs
 
