@@ -19,6 +19,7 @@ yellowbrick = "*"
 numpy = ">=1.22"
 gradient = "*"
 cryptography = "*"
+Pillow = ">=9.0.1"
 
 [dev-packages]
 black = "*"
