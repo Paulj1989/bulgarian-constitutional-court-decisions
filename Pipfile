@@ -4,29 +4,19 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-pandas = "*"
-matplotlib = "*"
-seaborn = "*"
-nltk = ">=3.6.6"
-tensorflow = ">=2.7.1"
-keras = "*"
-datetime = "*"
+pytesseract = "*"
+pdf2image = "*"
 ipykernel = "*"
-ipython = ">=7.31.1"
+pillow = "*"
+numpy = "*"
+pandas = "*"
+tensorflow = "*"
+nltk = "*"
 sklearn = "*"
-pydot = "*"
-tensorflow-hub = "*"
+matplotlib = "*"
 yellowbrick = "*"
-numpy = ">=1.22"
-gradient = "*"
-cryptography = "*"
-Pillow = ">=9.0.1"
 
 [dev-packages]
-black = "*"
 
 [requires]
-python_version = "3.9"
-
-[pipenv]
-allow_prereleases = true
+python_version = "3.10"
