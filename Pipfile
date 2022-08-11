@@ -16,7 +16,7 @@ sklearn = "*"
 pydot = "*"
 tensorflow-hub = "*"
 yellowbrick = "*"
-numpy = "*"
+numpy = ">=1.22"
 gradient = "*"
 cryptography = "*"
 
