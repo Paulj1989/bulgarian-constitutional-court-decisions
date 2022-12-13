@@ -58,7 +58,7 @@
                 "sha256:35824b4c3a97115964b408844d64aa14db1cc518f6562e8d7261699d1350a9e3",
                 "sha256:4ad3232f5e926d6718ec31cfc1fcadfde020920e278684144551c91769c7bc18"
             ],
-            "index": "pypi",
+            "markers": "python_version >= '3.6'",
             "version": "==2022.12.7"
         },
         "charset-normalizer": {
@@ -349,11 +349,11 @@
         },
         "ipykernel": {
             "hashes": [
-                "sha256:18c298565218e602939dd03b56206912433ebdb6b5800afd9177bbce8d96318b",
-                "sha256:71f21ce281da5a4e73ec4a7ecdf98802d9e65d58cdb7e22ff824ca994ce5114b"
+                "sha256:1374a55c57ca7a7286c3d8b15799cd76e1a2381b6b1fea99c494b955988926b6",
+                "sha256:1ab68d3d3654196266baa93990055413e167263ffbe4cfe834f871bcd3d3506d"
             ],
             "index": "pypi",
-            "version": "==6.18.1"
+            "version": "==6.19.2"
         },
         "ipython": {
             "hashes": [
@@ -1358,11 +1358,11 @@
         },
         "traitlets": {
             "hashes": [
-                "sha256:61832ea7b7f910f5745e27e9bb269a181fd15af76027d99560299209d5b17c94",
-                "sha256:bd0fca5c890a09bf66b33cce67ca14156b080429bc39c7ef26b075a4bd4f9fc3"
+                "sha256:57ba2ba951632eeab9388fa45f342a5402060a5cc9f0bb942f760fafb6641581",
+                "sha256:fde8f62c05204ead43c2c1b9389cfc85befa7f54acb5da28529d671175bb4108"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==5.7.0"
+            "version": "==5.7.1"
         },
         "typing-extensions": {
             "hashes": [
