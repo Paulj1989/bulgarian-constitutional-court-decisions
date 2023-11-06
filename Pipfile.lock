@@ -1411,10 +1411,10 @@
         },
         "sklearn": {
             "hashes": [
-                "sha256:d4cd5a2e64b3caaf82cd5e33c46884dfeec5ebf991710d9faeb4fe81cadb3ba6"
+                "sha256:af035c4f0b970b7fc2d3856079aa1aa1032df3d7f65048a9d87114abf13c4629"
             ],
             "index": "pypi",
-            "version": "==0.0.post10"
+            "version": "==0.0.post11"
         },
         "stack-data": {
             "hashes": [
